@@ -32,9 +32,9 @@
   "CLOCK_PORT": "clk",
 
   "MACROS": {
-    "artwork": {
+    "art": {
       "instances": {
-        "art": {
+        "artwork": {
           "location": [0, 0],
           "orientation": "N"
         }
@@ -48,9 +48,15 @@
     "artwork", "art"
   ],
 
+  "PL_MACRO_HALO": "10 10",
+  "FP_MACRO_HORIZONTAL_HALO": 10,
+  "FP_MACRO_VERTICAL_HALO": 10,
+  "FP_PDN_HORIZONTAL_HALO": 1,
+  "FP_PDN_VERTICAL_HALO": 1,
+
   "ERROR_ON_DISCONNECTED_PINS": false,
   "ERROR_ON_PDN_VIOLATIONS": false,
-  "RUN_PDN": false,
+  "PDN_CONNECT_MACROS_TO_GRID": false,
   "RUN_LVS": false,
 
   "//": "Configuration docs: https://librelane.readthedocs.io/en/latest/reference/configuration.html",
