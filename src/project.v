@@ -1,9 +1,13 @@
 /*
- * Copyright (c) 2024 Your Name
+ * Copyright (c) 2024 Kristaps Jurkans
  * SPDX-License-Identifier: Apache-2.0
  */
 
 `default_nettype none
+
+(* blackbox *) (* keep *)
+module artwork();
+endmodule
 
 module tt_um_example (
     input  wire [7:0] ui_in,    // Dedicated inputs
@@ -15,6 +19,9 @@ module tt_um_example (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+
+  (* keep *)
+  artwork art();
 
   // All output pins must be assigned. If not used, assign to 0.
   assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
