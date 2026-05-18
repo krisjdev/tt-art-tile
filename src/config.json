@@ -35,7 +35,7 @@
     "art": {
       "instances": {
         "artwork": {
-          "location": [20, 20],
+          "location": [10, 10],
           "orientation": "N"
         }
       },
